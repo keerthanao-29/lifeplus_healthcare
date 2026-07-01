@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appointment | CarePlus Healthcare</title>
+
+    <meta name="description"
+        content="Book an appointment with CarePlus Healthcare quickly and easily.">
+
+    <meta name="keywords"
+        content="appointment, hospital, doctor, healthcare">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            <h2>CarePlus Healthcare</h2>
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+
+            <li><a href="contact.html">Appointment</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Appointment Form -->
+
+    <section>
+
+        <h1>Book an Appointment</h1>
+
+        <p style="text-align:center;">
+            Fill in your details and our team will contact you shortly.
+        </p>
+
+        <br>
+
+        <form onsubmit="return validateForm()">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Full Name">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email">
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter Your Mobile Number">
+
+            <select id="department">
+
+                <option value="">Select Department</option>
+
+                <option>General Medicine</option>
+
+                <option>Cardiology</option>
+
+                <option>Pediatrics</option>
+
+                <option>Orthopedics</option>
+
+                <option>Dental Care</option>
+
+                <option>Emergency Care</option>
+
+            </select>
+
+            <input
+                type="date"
+                id="date">
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Describe your health concern"></textarea>
+
+            <button type="submit">
+
+                Book Appointment
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Contact Information -->
+
+    <section>
+
+        <h2>Contact Information</h2>
+
+        <p style="text-align:center;">
+
+            <strong>Address:</strong><br>
+
+            CarePlus Healthcare,<br>
+
+            MG Road, Hyderabad,<br>
+
+            Telangana, India
+
+        </p>
+
+        <br>
+
+        <p style="text-align:center;">
+
+            <strong>Phone:</strong> +91 98765 43210
+
+        </p>
+
+        <p style="text-align:center;">
+
+            <strong>Email:</strong> info@careplushealthcare.com
+
+        </p>
+
+        <p style="text-align:center;">
+
+            <strong>Emergency:</strong> 108
+
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 CarePlus Healthcare. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
