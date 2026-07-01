@@ -2,92 +2,88 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Gallery | CarePlus Healthcare</title>
 
     <meta name="description"
-        content="Explore CarePlus Healthcare through our gallery featuring hospital facilities, doctors, laboratories, and patient care.">
+        content="View the modern facilities of CarePlus Healthcare including hospital building, reception, laboratories, patient rooms, doctors, and ambulance services.">
 
-    <meta name="keywords"
-        content="hospital gallery, healthcare images, doctors, laboratory, ambulance">
-
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>CarePlus Healthcare</h1>
 
-    <nav>
-
-        <div class="logo">
-            <h2>CarePlus Healthcare</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <ul>
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
 
-            <li><a href="index.html">Home</a></li>
+            <h2>Hospital Gallery</h2>
 
-            <li><a href="about.html">About</a></li>
+            <p>
+                Take a look at our modern healthcare facilities and dedicated medical team.
+            </p>
 
-            <li><a href="services.html">Services</a></li>
+            <div class="gallery-grid">
 
-            <li><a href="gallery.html">Gallery</a></li>
+                <div class="gallery-item">
+                    <img src="images/hospital.jpg" alt="CarePlus Healthcare Hospital Building">
+                    <h3>Hospital Building</h3>
+                </div>
 
-            <li><a href="contact.html">Appointment</a></li>
+                <div class="gallery-item">
+                    <img src="images/reception.jpg" alt="Hospital Reception Area">
+                    <h3>Reception Area</h3>
+                </div>
 
-        </ul>
+                <div class="gallery-item">
+                    <img src="images/doctor.jpg" alt="Doctor Consulting Patient">
+                    <h3>Doctor Consultation</h3>
+                </div>
 
-    </nav>
+                <div class="gallery-item">
+                    <img src="images/laboratory.jpg" alt="Medical Laboratory">
+                    <h3>Medical Laboratory</h3>
+                </div>
 
-    <!-- Gallery -->
+                <div class="gallery-item">
+                    <img src="images/patient-room.jpg" alt="Patient Room">
+                    <h3>Patient Room</h3>
+                </div>
 
-    <section>
+                <div class="gallery-item">
+                    <img src="images/ambulance.jpg" alt="Emergency Ambulance">
+                    <h3>Emergency Ambulance</h3>
+                </div>
 
-        <h1>Hospital Gallery</h1>
-
-        <p style="text-align:center; max-width:800px; margin:auto;">
-
-            Take a look at our modern healthcare facilities and dedicated medical team.
-
-        </p>
-
-        <br><br>
-
-        <div class="gallery">
-
-            <img src="images/hospital.jpg"
-                 alt="CarePlus Healthcare Hospital Building">
-
-            <img src="images/reception.jpg"
-                 alt="Hospital Reception Area">
-
-            <img src="images/doctor.jpg"
-                 alt="Doctor Consulting a Patient">
-
-            <img src="images/lab.jpg"
-                 alt="Modern Medical Laboratory">
-
-            <img src="images/room.jpg"
-                 alt="Patient Room">
-
-            <img src="images/ambulance.jpg"
-                 alt="Emergency Ambulance Service">
+            </div>
 
         </div>
-
     </section>
 
     <!-- Footer -->
-
     <footer>
-
-        <p>© 2026 CarePlus Healthcare. All Rights Reserved.</p>
-
+        <div class="container">
+            <p>&copy; 2026 CarePlus Healthcare. All Rights Reserved.</p>
+        </div>
     </footer>
 
 </body>
