@@ -1,215 +1,32 @@
-/* ==========================
-   CAREPLUS HEALTHCARE
-   STYLE SHEET
-========================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f8fb;
-    color:#333;
-    line-height:1.6;
-}
-
-/* Navigation */
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:#0B6E99;
-    padding:15px 50px;
-}
-
-.logo h2{
-    color:white;
-    font-size:28px;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-}
-
-nav ul li{
-    margin-left:25px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-nav ul li a:hover{
-    color:#FFD700;
-}
-
-/* Hero */
-
-.hero{
-    background:linear-gradient(rgba(11,110,153,0.85),
-               rgba(11,110,153,0.85));
-    color:white;
-    text-align:center;
-    padding:100px 20px;
-}
-
-.hero h1{
-    font-size:48px;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:18px;
-    max-width:800px;
-    margin:auto;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:14px 28px;
-    background:#28a745;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-    font-size:18px;
-}
-
-.btn:hover{
-    background:#218838;
-}
-
-/* Sections */
-
-section{
-    padding:60px 40px;
-}
-
-section h1,
-section h2{
-    text-align:center;
-    color:#0B6E99;
-    margin-bottom:25px;
-}
-
-/* Cards */
-
-.card-container{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:25px;
-}
-
-.card{
-    background:white;
-    width:300px;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 5px 10px rgba(0,0,0,0.15);
-    text-align:center;
-}
-
-.card h3{
-    color:#0B6E99;
-    margin-bottom:15px;
-}
-
 /* Gallery */
 
 .gallery{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:20px;
 }
 
-.gallery img{
-    width:320px;
+.gallery-item{
+    background:#ffffff;
     border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    text-align:center;
     transition:0.3s;
 }
 
-.gallery img:hover{
-    transform:scale(1.05);
+.gallery-item:hover{
+    transform:translateY(-8px);
 }
 
-/* Forms */
-
-form{
-    max-width:600px;
-    margin:auto;
-}
-
-input,
-select,
-textarea{
+.gallery-item img{
     width:100%;
-    padding:12px;
-    margin:12px 0;
-    border:1px solid #ccc;
-    border-radius:5px;
+    height:220px;
+    object-fit:cover;
 }
 
-button{
-    background:#0B6E99;
-    color:white;
-    border:none;
-    padding:14px;
-    width:100%;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:18px;
-}
-
-button:hover{
-    background:#09597d;
-}
-
-/* Footer */
-
-footer{
-    background:#0B6E99;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-nav{
-    flex-direction:column;
-}
-
-nav ul{
-    flex-direction:column;
-    text-align:center;
-    margin-top:15px;
-}
-
-nav ul li{
-    margin:10px 0;
-}
-
-.hero h1{
-    font-size:32px;
-}
-
-.card{
-    width:90%;
-}
-
-.gallery img{
-    width:90%;
-}
-
+.gallery-item h3{
+    padding:15px;
+    color:#0B6E99;
 }
